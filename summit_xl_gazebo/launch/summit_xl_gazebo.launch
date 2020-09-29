@@ -6,6 +6,7 @@
 	<!--launch_navigation and launch_navigation_nomap args are exclusive
 	and they are (or not) launched for all robots-->
 	<arg name="launch_rviz" default="true"/>
+	<arg name="gui" default="true"/>
 	<arg name="launch_robot_a" default="true"/>
 	<arg name="launch_robot_b" default="false"/>
 	<arg name="launch_robot_c" default="false"/>
@@ -116,6 +117,7 @@
 		<arg name="launch_rviz" value="$(arg launch_rviz)"/>
 		<arg name="world" value="$(arg gazebo_world)"/>
 		<arg name="debug" value="$(arg debug)"/>
+		<arg name="gui" value="$(arg gui)"/>
 	</include>
 
 </launch>
