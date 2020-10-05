@@ -3,7 +3,7 @@
 
 	<!--Test-->
 	<arg name="yaml_test" default="/home/ruthrash/Desktop/test.yml"/>
-        <arg name="test_number" default="1"/>
+        <arg name="test_set_number" default="1"/>
 	<arg name="robot_name" default="robot"/>
 	<arg name="gui" default="true"/>
 
@@ -87,6 +87,7 @@
 
 
 	<include file="$(find qac_test_automation)/launch/dummy_test.launch">
+	<arg name="test_set_number" value="$(arg test_set_number)"/>
 	</include>
 
 
